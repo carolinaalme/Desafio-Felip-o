@@ -1,4 +1,4 @@
-let nome = "Felipão, o Invencível";
+let nome = "Felipão, O Invencível";
 let xp  = 8000;
 let nivel = "";
 
@@ -27,10 +27,12 @@ switch (true){
         nivel = "Ascendente";
         break;
 
-    case (zp <=10000):
-        nivel = "Immortal";
+    case (xp <=10000):
+        nivel = "Imortal";
     break;
+    
     default:
         nivel = "Radiante";
     break;
 }
+console.log("O herói " + nome + " está no nível " + nivel + " (XP: " + xp + ")");
